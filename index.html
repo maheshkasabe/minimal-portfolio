@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mahesh kasbe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <main>
+        <h1><b>mahesh kasbe**</b></h1>
+        
+        <p>
+            Software engineer based in India.
+        </p>
+        
+        <p>
+            Currently I work at <a href="https://tipalti.com" target="_blank">Diligent Insight</a>, building mobile experiences on Android and iOS.
+        </p>
+        
+        <p>
+            Previously I led technology at <a href="https://www.cpandr.co.uk" target="_blank">Immerisve Engineering</a>, a cardiac rehabilitation specialist.
+        </p>
+        
+        <p>
+            Take a look at some recent <a href="work.html" class="highlight-work">work</a>, read a <a href="blog.html">haiku</a> or feel free to <a href="#" id="contact-link">get in touch</a>.
+        </p>
+        
+        <div class="social-links" id="social-links">
+            <a target="_blank" href="https://twitter.com/mahshx_">X</a>
+            <a target="_blank" href="https://linkedin.com/in/maheshkasbe">Linkedin</a>
+            <a target="_blank" href="https://github.com/maheshkasabe">Github</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactLink = document.getElementById('contact-link');
+            const socialLinks = document.getElementById('social-links');
+            
+            // Initially hide social links
+            socialLinks.style.opacity = '0';
+            socialLinks.style.height = '0';
+            socialLinks.style.overflow = 'hidden';
+            socialLinks.style.transition = 'opacity 0.3s ease, height 0.3s ease';
+            
+            // Toggle social links visibility on contact link click
+            contactLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (socialLinks.style.opacity === '0') {
+                    socialLinks.style.height = 'auto';
+                    socialLinks.style.opacity = '1';
+                    const height = socialLinks.offsetHeight;
+                    socialLinks.style.height = height + 'px';
+                } else {
+                    socialLinks.style.opacity = '0';
+                    setTimeout(() => {
+                        socialLinks.style.height = '0';
+                    }, 300);
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

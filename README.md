@@ -1,0 +1,26 @@
+# Personal Portfolio Website
+
+A minimalist personal portfolio website inspired by [roryflint.co.uk](https://www.roryflint.co.uk/).
+
+## Setup
+
+1. Clone this repository
+2. Customize the content in `index.html` with your personal information
+3. Update the social media links in the social-links section
+4. Replace the placeholder favicon.ico with your own
+5. Deploy to your preferred hosting service (GitHub Pages, Netlify, Vercel, etc.)
+
+## Customization
+
+- Edit `styles.css` to change colors, fonts, and layout
+- Add additional pages as needed
+- Customize the links to point to your work or blog posts
+
+## Local Development
+
+Simply open the `index.html` file in your browser to preview the website locally.
+
+For a local development server with live reload, you can use tools like:
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VS Code extension
+- Python's built-in HTTP server: `python -m http.server`
+- Node.js with packages like `http-server` or `serve` 
