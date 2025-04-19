@@ -19,8 +19,3 @@ A minimalist personal portfolio website inspired by [roryflint.co.uk](https://ww
 ## Local Development
 
 Simply open the `index.html` file in your browser to preview the website locally.
-
-For a local development server with live reload, you can use tools like:
-- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VS Code extension
-- Python's built-in HTTP server: `python -m http.server`
-- Node.js with packages like `http-server` or `serve` 
